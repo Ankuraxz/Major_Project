@@ -24,7 +24,7 @@ while True:
 
 
 		#predicted label
-		out = knn(trainset,face_selection.flatten())
+		
 			#displahy
 		pred_name = "Ankur"
 		cv2.putText(frame,pred_name,(x,y-10),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,125),2,cv2.LINE_AA)
