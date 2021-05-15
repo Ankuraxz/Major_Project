@@ -40,4 +40,4 @@ while True:
 
 cam.release()
 cv2.destroyAllWindows()
-© 2021 GitHub, Inc.
+# © 2021 GitHub, Inc.
