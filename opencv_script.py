@@ -29,7 +29,7 @@ engine = eng.load_engine(trt_runtime, serialized_plan_fp32)
 #PREDICITON FUNCTION
 def prediction( img1):
     	out = inf.do_inference(engine, img1, h_input, d_input, h_output, d_output, stream, 1, HEIGHT, WIDTH)
-		return out
+	return out
 
 cam = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier("./face.xml")
@@ -55,9 +55,6 @@ while True:
 		face_selection = cv2.resize(face_selection,(100,100))
 		imgx = cv2.cvtColor(face_selection,cv2.COLOR_RGB2GRAY)
 
-		#predicted label
-		
-			#displahy
 		pred_name =class_list[np.argmax(prediction(imgx))]
 		cv2.putText(frame,pred_name,(x,y-10),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,125),2,cv2.LINE_AA)
 		cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,255),5)
