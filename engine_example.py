@@ -3,8 +3,8 @@ import argparse
 from onnx import ModelProto
 import tensorrt as trt 
  
-engine_name = "lbp.plan"
-onnx_path = "./lbp_irv2.onnx"
+engine_name = "XCEPTION.plan"
+onnx_path = "./XCEPTION.onnx"
 batch_size = 1 
  
 model = ModelProto()
